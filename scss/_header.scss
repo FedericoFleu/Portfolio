@@ -1,0 +1,44 @@
+@import "colores";
+@import "sizes";
+
+h1{
+    color: $color6;
+    padding: 10px;
+    font-weight: 1000;
+    font-size: $size;
+}
+
+a {
+    text-decoration: none;
+    color: $color6 !important;
+    list-style: none;
+}
+
+#nav-bar {
+    top: 0;
+    z-index: 5;
+}
+
+#navbarNav ul li::after{
+    content:"";
+    background: $color6;
+    display: block;
+    margin: auto;
+}
+
+#navbarNav ul li:hover::after{
+    width: 60%;
+}
+
+.navbar-nav li a {
+    color: $color6 !important;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+// Cambio boton Menu Hamburgesa
+.navbar-toggler-icon{
+    font-size: 10px;
+    text-decoration: none;
+}
+
