@@ -6,8 +6,8 @@ section div div a {
 }
 
 .contenedor {
-    min-height: 85vh;
-    width: 100%;
+    min-height: $size;
+    width: $size2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,19 +17,18 @@ section div div a {
 #hero h2 {
     display: block;
     width: fit-content;
-    font-size: $size1;
+    font-size: $size18;
     position: relative;
     color: transparent;
-    font-weight: 500;
-    animation: text_reveal .5s ease forwards;
+    font-weight: $size14;
+    animation: text_reveal 0.5s ease forwards;
     animation-delay: 1.5s;
 }
 
 #hero .hero{
-    max-width: 1200px;
+    max-width: $size13;
     margin: 0 auto;
-    padding: 0 40px;
-    // justify-content: flex-start;
+    padding: 0 $size11;
 }
 
 #hero h2:nth-child(1){
@@ -47,7 +46,7 @@ section div div a {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: $size2;
     width: 0;
     background-color: $color5;
     animation: text_reveal_box 1s ease;
@@ -77,12 +76,12 @@ section div div a {
 // Keyframes
 @keyframes text_reveal_box{
     50%{
-        width: 100%;
+        width: $size2;
         left: 0;
     }
     100%{
         width: 0;
-        left: 100%;
+        left: $size2;
     }
 }
 
@@ -95,7 +94,7 @@ section div div a {
 @keyframes text_reveal_name {
     100%{
         color: $color5;
-        font-weight: 500;
+        font-weight: $size14;
     } 
 }
 
