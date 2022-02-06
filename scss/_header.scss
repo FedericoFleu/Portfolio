@@ -1,17 +1,18 @@
 @import "colores";
 @import "sizes";
+@import "time";
+@import "positions";
 
 h1{
     color: $color6;
-    padding: 10px;
-    font-weight: 1000;
-    font-size: $size;
+    padding: $size6;
+    font-weight: $size17;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: $positionNone;
     color: $color6 !important;
-    list-style: none;
+    list-style: $positionNone;
 }
 
 #nav-bar {
@@ -22,25 +23,25 @@ a {
 #navbarNav ul li::after{
     content:"";
     background: $color6;
-    display: block;
-    margin: auto;
+    display: $posBlock;
+    margin: $posAuto;
 }
 
 .navbar-nav li a {
-    font-weight: 1000;
-    font-size: 25px;
-    text-align: center;
+    font-weight: $size17;
+    font-size: $size9;
+    text-align: $positionCenter;
 }
 
 //Efecto Hover
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    display: $diplays;
+    vertical-align: $posMiddle;
+    -webkit-transform: perspective($size3) translateZ(0);
+    transform: perspective($size3) translateZ(0);
+    box-shadow: 0 0 $size3 rgba(0, 0, 0, 0);
+    -webkit-transition-duration: $second;
+    transition-duration: $second;
     -webkit-transition-property: transform;
     transition-property: transform;
   }
@@ -51,7 +52,7 @@ a {
 
 // Cambio boton Menu Hamburgesa
 .navbar-toggler-icon{
-    color: $color6 !important; 
-    font-size: 18px
+    // color: $color6 !important; 
+    font-size: $size7;
 }
 

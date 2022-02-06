@@ -1,46 +1,48 @@
 @import "colores";
 @import "sizes";
+@import "time";
+@import "positions";
 
 footer{
-    margin: 20px;
+    margin: $size8;
 }
 
 div h4{
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
+    font-size: $size10;
+    text-align: $positionCenter;
+    font-weight: $size16;
 }
 
 .social-menu ul {
-    margin: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    margin: $size6;
+    justify-content: $positionCenter;
+    display: $positionFlex;
+    align-items: $positionCenter;
 }
 .social-menu ul li {
-    list-style: none;
-    margin: 10px 10px;
+    list-style: $positionNone;
+    margin: $size6 $size6;
 }
 .social-menu ul li .fab{
     color: $color6;
-    font-size: 30px;
-    line-height: 50px;
-    transition: .5s;
+    font-size: $size10;
+    line-height: $size12;
+    transition: $second1;
 }
 .social-menu ul li .fab:hover {
     color: $color1;
 }
 .social-menu ul li a {
-    position: relative;
+    position: $positionRelative;
     display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: $size12;
+    height: $size12;
+    border-radius: $size1;
     background-color: $color1;
-    text-align: center;
-    transition: 0.5s;
+    text-align: $positionCenter;
+    transition: $second1;
     transform: translate(0,0px);
-    box-shadow: 0px 7px 5px $color9;
+    box-shadow: 0px $size5 $size4 $color9;
 }
 .social-menu ul li a:hover {
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
@@ -55,8 +57,7 @@ div h4{
     background-color: $color6;
 }
 
-
 #copy{
-    font-size: 25px;
-    font-weight: 600;
+    font-size: $size9;
+    font-weight: $size15;
 }

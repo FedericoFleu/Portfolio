@@ -1,0 +1,35 @@
+@import "sizes";
+@import "positions";
+
+h2{
+    font-size: $size9;
+    color: $color6;
+    margin-bottom: $size11;
+    font-weight: $size16;
+}
+
+section h3{
+    font-size: $size9;
+    color: $color6;
+    text-align: $positionCenter;
+    font-weight:$size16;
+}
+
+.proyectos{
+    margin:$size10;
+}
+
+.projects-title{
+    font-size: $size9;
+    color: $color6;
+    text-align: $positionCenter;
+    font-weight: $size16;
+}
+
+p{
+    color: $color6;
+    text-align: $positionCenter;
+    font-size: $size8;
+    padding: $size8;
+    font-weight: $size14;
+}
